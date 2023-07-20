@@ -1,0 +1,32 @@
+div.shellcL {
+    flex-direction: column;
+    width: 100%;
+}
+
+div.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.logo {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    border: 1px solid royalblue;
+    padding: 2%;
+    margin-left: 1%;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+}
+
+div.bottom {
+    display: flex;
+    width: 95%;
+    justify-content: end;
+    justify-items: end;
+}
+
+div.button {
+    display: flex;
+}
+

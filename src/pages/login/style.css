@@ -1,0 +1,24 @@
+div.shell {
+    display: flex;
+    border: 3px solid royalblue;
+    padding: 3rem;
+    margin-top: 15rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 2px 1px;
+    border-radius: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+h3.Label {
+    display: flex;
+    padding-right: 1rem;
+}
