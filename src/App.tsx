@@ -10,26 +10,19 @@ const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(
     AuthenticationService.isAuthenticated
   );
-  
 
   return isAuthenticated ? (
-   
+    <BrowserRouter>
     AuthenticationService.isAdmin()? (
-   <BrowserRouter>
       <Routes>
-      <Route path="/" element={<CustomerList/>} />
-      <Route path="/edit/:id" element={<EditCustomer/>} />
-      </Routes>
-    </BrowserRouter>
+        <Route path="/" element={<CustomerList/>} />
+        <Route path="/edit/:id" element={<EditCustomer/>} />   
     ) : (
-      <BrowserRouter>
-      <Routes>
          <Route path="/" element={<CustomerList/>} />
       </Routes>
-    </BrowserRouter>
     )
+    </BrowserRouter>
   ) : (
-   
     <Login  setIsAuthenticated={setIsAuthenticated}/>
   );
 };
